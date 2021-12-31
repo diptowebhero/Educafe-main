@@ -17,7 +17,6 @@ body {
 .container {
   max-width: 1180px;
   margin: 0 auto;
-  /* padding: 0px 40px; */
 }
 :root {
   --heading-color: #2d3436;
@@ -44,8 +43,8 @@ body {
   grid-gap: 20px;
 }
 .animate__animated.animate__pulse {
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
 }
 .nav-bar {
   display: flex;
@@ -118,10 +117,10 @@ body {
   color: var(--heading-color);
   line-height: 104px;
 }
-.banner-image{
-    max-width:700px;
-    height: 700px;
-    margin: 0 auto;
+.banner-image {
+  max-width: 700px;
+  height: 700px;
+  margin: 0 auto;
 }
 .banner-image img {
   width: 100%;
@@ -132,18 +131,87 @@ body {
   color: var(--highlight-color);
 }
 /* banner css end */
-.partners{
+.partners {
   padding: 0px 40px;
 }
-.partner{
-  max-width:970px;
-  height:116px;
+.partner {
+  max-width: 970px;
+  height: 116px;
   background: white;
   margin: 0 auto;
+  border-radius: 100px;
+}
+#classes {
+  margin-top: 56px;
+}
+.section-title {
+  text-align: center;
+  max-width: 655px;
+  margin: 0px auto;
+}
+.section-title h2 {
+  font-size: 59px;
+  line-height: 104px;
+  font-weight: 600;
+}
+.section-title p {
+  color: rgba(71, 60, 58, 1);
+  padding: 0px 34px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.classes-container {
+  padding: 0px 40px;
   margin-bottom: 20px;
-  border-radius:100px;
-  /* display: flex;
-  align-items: center;
-  justify-content: space-around; */
-  
+}
+.class-card {
+  text-align: center;
+  margin-top: 55px;
+  background:rgba(255, 255, 255, 0.5);
+  max-width: 320px;
+  height: 450px;
+  border-radius: 20px;
+  transition: .3s;
+}
+.class-card:hover{
+ transform: translateY(-5px);
+ background:rgba(255, 255, 255, 1);
+}
+.card-img {
+  width: 120px;
+  height: 120px;
+  margin: 0px auto;
+  position: relative;
+  top: 77px;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+}
+.card-text {
+  position: relative;
+  top: 102px;
+}
+.card-text h3 {
+  font-size: 35px;
+  line-height: 56px;
+  color: var(--main-color);
+  font-weight: 700;
+}
+.card-text p {
+  line-height: 26px;
+  color: rgba(45, 52, 54, 1);
+  font-weight: 400;
+  padding: 0px 30px;
+  margin-bottom: 15px;
+}
+.btn-card {
+  padding: 12px 30px;
+  font-size: 14px;
+  border: 0;
+  font-weight: 600;
+  border-radius: 8px;
+  background: var(--highlight-color);
+  color: white;
+  cursor: pointer;
 }

@@ -30,6 +30,10 @@
   #toggle-menu:checked ~ .navigation {
     transform: translateY(0px);
   }
+  .col-3{
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 10px;
+  }
 }
 @media (max-width: 700px) {
   .banner-image img {
@@ -41,15 +45,22 @@
     font-size: 40px;
     font-weight: 800;
     color: var(--heading-color);
-    line-height: 104px;
+    line-height: 60px;
   }
-  .col-5 {
+  .col-5,
+  .col-3 {
     grid-template-columns: 1fr;
+    grid-row-gap: 10px;
   }
   .partner {
     width: 100% !important;
     height: 100% !important;
     border-radius: 10px;
     padding: 20px 0px;
+  }
+  .section-title h2{
+    font-size: 40px;
+    line-height: 56px;
+    margin-bottom: 10px;
   }
 }
