@@ -1,0 +1,29 @@
+@media (max-width: 940px) {
+  .btn-nav {
+    display: none;
+  }
+  .toggle-menu-btn {
+    display: block;
+  }
+  .navigation {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-500px);
+    transition: 0.3s;
+  }
+  .navigation li {
+    display: block;
+    padding: 10px 0px;
+  }
+  .bolet::before {
+    width: 5px;
+    height: 5px;
+    background: none;
+  }
+  #toggle-menu:checked ~ .navigation {
+    transform: translateY(0px);
+  }
+}
