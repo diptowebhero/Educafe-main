@@ -1,80 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700;800;900&display=swap');
-*{
-    padding: 0;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    font-family: 'Inter', sans-serif;
-    box-sizing: border-box;
-    background: url(/images/bg.png);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  background: url(/images/bg.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.container{
-    max-width: 1150px;
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  /* padding: 0px 40px; */
+}
+:root {
+  --heading-color: #2d3436;
+  --highlight-color: #fe3c5e;
+  --animate-duration: infinite;
+  --animate-delay: 0.9s;
+}
+.col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  grid-gap: 20px;
+}
+.col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  grid-gap: 20px;
+}
+.col-5 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  grid-gap: 20px;
+}
+.animate__animated.animate__pulse {
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0px 40px;
+}
+.logo img {
+  width: 100%;
+  margin-top: 13px;
+}
+.navigation li {
+  display: inline-block;
+  list-style: none;
+}
+.navigation li a {
+  color: var(--highlight-color);
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 32px;
+  position: relative;
+  transition: 0.3s;
+}
+.navigation li a:hover {
+  color: #2d3436;
+  font-weight: 500;
+}
+.bolet::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: rgba(253, 203, 110, 1);
+  position: absolute;
+  border-radius: 50%;
+  top: 40px;
+}
+.btn-nav {
+  border: 0;
+  border-radius: 5px;
+  padding: 12px 30px;
+  background: var(--highlight-color);
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+#toggle-menu {
+  display: none;
+}
+.toggle-menu-btn {
+  font-size: 22px;
+  color: #fe3c5e;
+  display: none;
+}
+/* nav css end */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 56px;
+  text-align: center;
+}
+.banner-text h1 {
+  font-size: 90px;
+  font-weight: 800;
+  color: var(--heading-color);
+  line-height: 104px;
+}
+.banner-image{
+    max-width:700px;
+    height: 700px;
     margin: 0 auto;
-    padding: 0px 40px;
 }
-:root{
-    --heading-color:#2D3436;
-    --highlight-color:#FE3C5E;
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  margin-top: -108px;
 }
-.nav-bar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-}
-.logo img{
-    width: 100%;
-    margin-top: 13px;
-}
-.navigation li{
-    display: inline-block;
-    list-style:none;
-}
-.navigation li a{
-    color:var(--highlight-color);
-    text-decoration: none;
-    padding: 10px 15px;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 32px;
-    position: relative;
-    transition: .3s;
-}
-.navigation li a:hover{
-    color: #2D3436;
-    font-weight: 500;
-}
-.bolet::before{
-    content: "";
-    width: 5px;
-    height: 5px;
-    background: rgba(253, 203, 110, 1);
-    position: absolute;
-    border-radius:50%;
-    top: 40px;
-}
-.btn-nav{
-    border: 0;
-    border-radius: 5px;
-    padding: 12px 30px;
-    background: var(--highlight-color);
-    color: white;
-    font-weight: 600;
-    font-size: 15px;
-    cursor: pointer;
-}
-#toggle-menu{
-    display: none;
-}
-.toggle-menu-btn{
-    font-size: 22px;
-    color: #FE3C5E;
-    display: none;
+.highlight {
+  color: var(--highlight-color);
 }

@@ -27,3 +27,16 @@
     transform: translateY(0px);
   }
 }
+@media (max-width: 700px) {
+  .banner-image img {
+    width: 69%;
+    height: 68%;
+    margin-top: -8px;
+  }
+  .banner-text h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--heading-color);
+    line-height: 104px;
+  }
+}
