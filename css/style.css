@@ -465,6 +465,7 @@ textarea::placeholder {
 .copyright{
   margin-top: 20px;
   text-align: center;
+  padding: 0px 40px;
 }
 .copyright p{
   margin-top: 10px;
