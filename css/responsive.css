@@ -34,7 +34,8 @@
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 10px;
   }
-  .col-2 {
+  .col-2,
+  .certificate {
     grid-template-columns: 1fr;
   }
 }
@@ -93,5 +94,20 @@
   }
   .feature-main-text h4 {
     line-height: 27px;
+  }
+  .certificate-left h2 {
+    font-size: 44px;
+    line-height: 59px;
+    margin-bottom: 16px;
+  }
+  .search-box button {
+    width: 100%;
+  }
+  .search-box {
+    padding: 0px 7px;
+  }
+  .search-box form input {
+    height: 20px;
+    width: 164px;
   }
 }
