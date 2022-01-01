@@ -462,3 +462,11 @@ textarea::placeholder {
   font-weight: 400;
   color: #2d3436;
 }
+.copyright{
+  margin-top: 20px;
+  text-align: center;
+}
+.copyright p{
+  margin-top: 10px;
+  font-weight: 600;
+}
