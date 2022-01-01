@@ -24,6 +24,11 @@ body {
   --animate-duration: infinite;
   --animate-delay: 0.9s;
 }
+.d-flex {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+}
 .col-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -342,13 +347,13 @@ body {
   margin: 0 auto;
   background: rgba(255, 255, 255, 1);
   border-radius: 10px;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 16px 32px;
   flex-wrap: wrap;
 }
-.search-box form input{
+.search-box form input {
   border: none;
   height: 26px;
   width: 317px;
@@ -356,13 +361,13 @@ body {
   outline: none;
   font-size: 14px;
 }
-input::placeholder{
-  color: #DCDCDC;
+input::placeholder {
+  color: #dcdcdc;
 }
-.search-box form i{
-  color: #DCDCDC;
+.search-box form i {
+  color: #dcdcdc;
 }
-.search-box button{
+.btn {
   background: rgba(254, 60, 94, 1);
   border: 0;
   color: white;
@@ -372,4 +377,88 @@ input::placeholder{
   border-radius: 10px;
   cursor: pointer;
   outline: none;
+}
+/* search-box css end */
+.footer {
+  margin-bottom: 20px;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  grid-gap: 50px;
+  padding: 0px 40px;
+}
+.logo {
+  max-width: 195px;
+  height: 56px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.paragraph {
+  margin-top: 20px;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.social-link img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+.social-link h4 {
+  margin-right: 43px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.col-right-top h5 {
+  color: #adadad;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+}
+.form-control input {
+  border: none;
+  height: 36px;
+  max-width: 177px;
+  padding: 0px 18px;
+  margin-right: 9px;
+  outline: none;
+  font-size: 14px;
+  border-radius: 10px;
+  margin-top: 14px;
+  background-color: #e1dddd;
+}
+textarea {
+  border: 1px solid #fe3c5e;
+  max-width: 286px;
+  font-size: 14px;
+  padding: 10px 19px;
+  margin-right: 15px;
+  background-color: #e1dddd;
+  border-radius: 10px;
+  outline: none;
+}
+textarea::placeholder {
+  color: #f497a8;
+}
+.form-control input::placeholder {
+  color: #2d3436 !important;
+}
+.row {
+  margin-top: 50px;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.col p {
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #2d3436;
 }
